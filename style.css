@@ -158,10 +158,10 @@
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  height: 40vh;
   background-color: hsl(256, 26%, 20%);
   margin: 8rem auto;
-  padding: 0 5%;
+  padding: 5rem 5%;
+  isolation: isolate;
 }
 .banner-text {
   font-size: 3.5rem;
@@ -175,6 +175,7 @@
   right: 0;
   height: 100%;
   pointer-events: none;
+  z-index: -1;
 }
 
 .footer {
@@ -232,6 +233,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  width: 100%;
 }
 
 @media screen and (max-width: 968px) {
